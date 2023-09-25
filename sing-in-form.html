@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="./styles/style.css">
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+    body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300
+    }
+
+    .height {
+        height: 100vh
+    }
+
+    .card {
+        border: none;
+        padding: 20px;
+        background-color: black;
+        color: #fff
+    }
+
+    .form-input {
+        position: relative;
+        margin-bottom: 10px;
+        margin-top: 10px
+    }
+
+
+    .form-control {
+        height: 50px;
+        text-indent: 24px;
+        font-size: 15px
+    }
+
+
+    .form-check-label {
+        margin-top: 2px;
+        font-size: 14px
+    }
+
+    .signup {
+        height: 50px;
+        font-size: 14px
+    }
+
+</style>
+    <title>Sign In Form</title>
+</head>
+<body background="./assets/richard-ciraulo-e9uOssEwwjo-unsplash.jpg" style="background-repeat: no-repeat; background-size: cover;">
+    <div class="container mt-5 mb-5">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-6 mt-5">
+                <div class="card px-5 py-5">
+                    <h4 class="text-center text-danger"> SignIn </h4>
+                    <form onsubmit="SignInUser(); return false">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-danger">Email</label>
+                        <input type="Email" class="form-control Name Email"  aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-danger">Passwrod</label>
+                        <input type="password" class="form-control Name Password"  aria-describedby="emailHelp">
+                      </div>
+                      <button type="submit" class="btn btn-outline-danger mt-3 w-100">Sign-In</button>
+                    </form>
+                    <div class="text-center mt-2"> <span>Not a member?</span> <a 
+                            class="text-decoration-none" href="signup-form.html">Sign-Up</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="./js/User-Sign_Up.js"></script>
+<script src="./js/user-sign-in.js"></script>
+</html>l
