@@ -6,7 +6,7 @@ let UserObject = {
     House: String,
     Email: String,
     Phone: Number,
-    Coffee: String
+    Gender: String
 }
 
 let SubmitUserDetails = () => {
@@ -16,7 +16,7 @@ let SubmitUserDetails = () => {
         let House = $('.House').value;
         let Email = $('.Email').value;
         let Phone = $('.Phone').value;
-        let Coffee = document.querySelector('.radio:checked').value; // input[name="flexRadioDefault"]
+        let Gender = document.querySelector('.radio:checked').value; // input[name="flexRadioDefault"]
         let Password = $('.password').value;
 
         
@@ -26,7 +26,7 @@ let SubmitUserDetails = () => {
         UserObject.House = House;
         UserObject.Email = Email;
         UserObject.Phone = Phone;
-        UserObject.Coffee = Coffee;
+        UserObject.Gender = Gender;
         UserObject.Password = Password;
         
        
