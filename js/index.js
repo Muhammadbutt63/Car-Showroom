@@ -12,15 +12,17 @@ let Quantity4 = 0;
 
 
 let GetButton1value = () => {
-    try {
-        let TemporaryValue = parseInt($('.value1').dataset.value);
-        Value1 += TemporaryValue;
-        let GetInput = $('.one');
-        GetInput.placeholder = `${Value1} x ${Quantity1}`;
-        Quantity1++;
-    } catch (error) {
-        console.log(error.message)
-    }
+  try {
+      let TemporaryValue = parseInt($('.value1').dataset.value);
+      
+      let GetInput = $('.one');
+      Quantity1++;
+      GetInput.placeholder = `5000 x ${Quantity1}`;
+      Value1 += TemporaryValue;
+      
+  } catch (error) {
+      console.log(error.message)
+  }
 }
 
 let GetButton2value = () => {
@@ -28,8 +30,8 @@ let GetButton2value = () => {
         let TemporaryValue = parseInt($('.value2').dataset.value);
         Value2 += TemporaryValue;
         let GetInput = $('.two');
-        GetInput.placeholder = `${Value2} x ${Quantity2}`;
         Quantity2++;
+        GetInput.placeholder = `10000 x ${Quantity2}`;
     } catch (error) {
         console.log(error.message)
     }
@@ -40,8 +42,8 @@ let GetButton3value = () => {
         let TemporaryValue = parseInt($('.value3').dataset.value);
         Value3 += TemporaryValue;
         let GetInput = $('.three');
-        GetInput.placeholder = `${Value3} x ${Quantity3}`;
         Quantity3++;
+        GetInput.placeholder = `30000 x ${Quantity3}`;
     } catch (error) {
         console.log(error.message)
     }
@@ -52,8 +54,8 @@ let GetButton4value = () => {
         let TemporaryValue = parseInt($('.value4').dataset.value);
         Value4 += TemporaryValue;
         let GetInput = $('.four');
-        GetInput.placeholder = `${Value4} x ${Quantity4}`;
         Quantity4++;
+        GetInput.placeholder = `20000 x ${Quantity4}`;
     } catch (error) {
         console.log(error.message)
     }
@@ -144,28 +146,28 @@ let CalculateThePrice = () => {
                       <th scope="row">1</th>
                       <td>Lamborghini</td>
                       <td>${Quantity1}</td>
-                      <td>${Value1}</td>
+                      <td>5000</td>
                       <td>${Value1}</td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
                       <td>Rolls Royce</td>
                       <td>${Quantity2}</td>
-                      <td>${Value2}</td>
+                      <td>10000</td>
                       <td>${Value2}</td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
                       <td>BMW</td>
                       <td>${Quantity3}</td>
-                      <td>${Value3}</td>
+                      <td>30000</td>
                       <td>${Value3}</td>
                     </tr>
                     <tr>
                       <th scope="row">4</th>
                       <td>Audi</td>
                       <td>${Quantity4}</td>
-                      <td>${Value4}</td>
+                      <td>20000</td>
                       <td>${Value4}</td>
                     </tr>
                   </tbody>
